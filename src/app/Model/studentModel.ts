@@ -1,9 +1,9 @@
 export class StudentModel {
-    surname: string;
+    surnamee: string;
     imageUrl: string;
 
     constructor(surname: string, imageUrl: string) {
-    this.surname = surname;
+    this.surnamee = surname;
     this.imageUrl = imageUrl;
     }
     }
