@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentModel, STUDENTS } from '../Model/studentModel';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  students: StudentModel[]; //neue lokale Variable, für Controller von Typ StudentModel als Array
+  test: string = "Meine erste lokale Variable"; 
+  
 
-  constructor() {}
+  constructor() {
+    this.students = STUDENTS; //Diese lokale Variable soll den Wert von konstanten STUDENTS haben.
+  }
 
 }
