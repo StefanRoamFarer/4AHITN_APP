@@ -12,6 +12,6 @@ export class StudentModel {
 
     //commit
     export const STUDENTS: StudentModel[] = [
-        new StudentModel(1, "Student 1", "assets/kkk04.gif"),  //Assets Bilder hinzufügen
-        new StudentModel(2,"Student 2", "assets/kkk04.gif")
+        new StudentModel(1, "Stefan", "assets/kkk04.gif"),  //Assets Bilder hinzufügen
+        new StudentModel(2,"Josip", "assets/kkk04.gif")
     ]

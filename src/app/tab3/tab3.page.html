@@ -18,12 +18,16 @@
   </ion-header>
 
   <ion-list>
-    <ion-item *ngFor = "let student of students; let i = index" >
-      <a [routerLink] = "[''+student.id]">
+    <ion-item *ngFor = "let student of students" >
+      <a [routerLink] = "['/student-detail',student.id]">
         <img src ='{{student.imageUrl}}' />{{student.surname}}
       </a>
    {{student.surname}}
   </ion-item>
 </ion-list>
+  <div *ngIf="student">
+    <h2>{{ student.surname }}</h2>
+
+  </div>
 
 </ion-content>
