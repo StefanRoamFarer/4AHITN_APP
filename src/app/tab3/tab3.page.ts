@@ -12,11 +12,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 export class Tab3Page {
   students: StudentModel[]; //neue lokale Variable, für Controller von Typ StudentModel als Array
-  test: string = "Meine erste lokale Variable";
+
 
 
   constructor() {
-    this.students = STUDENTS; //Diese lokale Variable soll den Wert von konstanten STUDENTS haben.
+    this.students = STUDENTS; //Diese lokale Variable soll den Wert von konstanten STUDENTS haben
   }
 
 }

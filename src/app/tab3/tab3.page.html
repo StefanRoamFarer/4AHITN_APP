@@ -5,10 +5,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<div>
-  <button routerLink="/tab1">Tab 1</button>
-  <button routerLink="/tab2">Tab 2</button>
-</div>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -18,16 +15,18 @@
   </ion-header>
 
   <ion-list>
-    <ion-item *ngFor = "let student of students" >
-      <a [routerLink] = "['/student-detail',student.id]">
-        <img src ='{{student.imageUrl}}' />{{student.surname}}
+    <ion-item *ngFor="let student of students">
+      <a [routerLink]="['/student-detail', student.id]">
+        <img src="{{ student.imageUrl }}" />{{ student.surname }}
       </a>
-   {{student.surname}}
+      <div *ngIf="student.id">
+        <h2>{{ student.surname }}</h2>
+        <p>Name: {{ student.name }}</p>
+        <p>Unterricht: {{ student.course }}</p>
+      </div>
+
   </ion-item>
 </ion-list>
-  <div *ngIf="student">
-    <h2>{{ student.surname }}</h2>
 
-  </div>
 
 </ion-content>
