@@ -10,14 +10,15 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Tab</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-list>
     <ion-item *ngFor="let student of students">
-      <a [routerLink]="['/student-detail', student.id]">
+      <a [routerLink]="['student.id']">
         <img src="{{ student.imageUrl }}" />{{ student.surname }}
+
       </a>
       <div *ngIf="student.id">
         <h2>{{ student.surname }}</h2>
