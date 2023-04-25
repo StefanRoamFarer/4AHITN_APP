@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  fields: number[] = [];
+
+  constructor() {
+    for (let i = 1; i <= 24; i++) {
+      this.fields.push(i);
+    }
+  }
+
+  onFieldClicked(field: number) {
+    console.log("Field " + field + " clicked.");
+  }
 
 }

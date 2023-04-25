@@ -1,17 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title>
+        Ionic Scrollable Grid
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let field of fields" (click)="onFieldClicked(field)">
+          <ion-card>
+            <ion-card-header>
+              Field {{field}}
+            </ion-card-header>
+            <ion-card-content>
+              This is field {{field}}.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
