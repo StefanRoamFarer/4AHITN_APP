@@ -19,7 +19,7 @@ export const STUDENTS: StudentModel[] = [
     name: 'Tarik',
     surname: 'Akpinar',
     course: 'BSPK',
-    imageUrl: 'https://via.placeholder.com/150',
+    imageUrl: 'image.src = \'../assets/schueler/akpinar.jpg\';',
 
   },
   {
