@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -9,7 +9,8 @@ export class Tab2Page {
 
   fields: number[] = [];
 
-  constructor() {
+
+  constructor(private navCtrl: NavController) {
     for (let i = 1; i <= 24; i++) {
       this.fields.push(i);
     }
@@ -17,6 +18,10 @@ export class Tab2Page {
 
   onFieldClicked(field: number) {
     console.log("Field " + field + " clicked.");
+  }
+
+  goToTab1() {
+    this.navCtrl.navigateForward('/tabs/tab1');
   }
 
 }
