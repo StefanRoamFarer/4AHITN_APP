@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {StudentModel, STUDENTS} from '../Model/studentModel';
+import {NavController} from "@ionic/angular";
 
 @Component({
   selector: 'app-student-detail',
@@ -13,7 +14,7 @@ export class StudentDetailPage implements OnInit {
   student:any;
 
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private navCtrl: NavController) {
     this.students = STUDENTS;
     let id: number = parseInt(this.route.snapshot.paramMap.get('id') || "");
     console.log("ID des Studenten:", id);
@@ -23,6 +24,9 @@ export class StudentDetailPage implements OnInit {
         break;
       }
     }
+  }
+  goToTab3() {
+    this.navCtrl.navigateForward('/tabs/tab3');
   }
 
 
