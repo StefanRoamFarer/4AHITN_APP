@@ -19,7 +19,8 @@ export const STUDENTS: StudentModel[] = [
     name: 'Stefan',
     surname: 'Milojkovic',
     course: 'Informatik',
-    imageUrl: 'https://via.placeholder.com/150',
+    imageUrl: '../../assets/icon/Bounty_stefan.jpg',
+
 
   },
   {
