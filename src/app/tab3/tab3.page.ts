@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { StudentModel, STUDENTS } from '../Model/studentModel';
 import { RouterModule, Routes } from '@angular/router';
+import {NavController} from "@ionic/angular";
 
 
 
@@ -15,8 +16,11 @@ export class Tab3Page {
 
 
 
-  constructor() {
+  constructor(private navCtrl: NavController) {
     this.students = STUDENTS; //Diese lokale Variable soll den Wert von konstanten STUDENTS haben
   }
 
+  goToTab1() {
+    this.navCtrl.navigateForward('/tabs/tab1');
+  }
 }
