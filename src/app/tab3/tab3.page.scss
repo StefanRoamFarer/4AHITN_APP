@@ -1,0 +1,8 @@
+.zoom-out {
+  transform: scale(1); /* Ausgangszustand */
+  transition: transform 0.3s ease; /* Übergangseigenschaften */
+}
+
+.zoom-out:hover {
+  transform: scale(1.1); /* Zielzustand bei Hover */
+}
