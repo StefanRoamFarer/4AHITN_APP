@@ -11,8 +11,8 @@
 
   <ion-list>
     <ion-item *ngFor="let student of students">
-      <a [routerLink]="[''+student.id]">
-        <img src="{{ student.imageUrl }}"  style="" class="zoom-out" />
+      <a [routerLink]="['' +student.id]">
+        <img src="{{ student.imageUrl }}" style="width: 100px; height: 100px;" class="zoom-out" />
       </a>
     </ion-item>
 </ion-list>

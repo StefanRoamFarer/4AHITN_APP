@@ -1,23 +1,32 @@
 import { Component } from '@angular/core';
 import { StudentModel, STUDENTS } from '../Model/studentModel';
-import { RouterModule, Routes } from '@angular/router';
-import {NavController} from "@ionic/angular";
-
-
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-
 export class Tab3Page {
-  students: StudentModel[]; //neue lokale Variable, für Controller von Typ StudentModel als Array
+  students: StudentModel[];
 
+  constructor(private navCtrl: NavController, private router: Router) {
+    this.students = STUDENTS;
+  }
 
+  animatePicture(studentId: number, event: Event) {
+    const targetElement = event.currentTarget as Element;
+    const imageElement = targetElement.querySelector('img');
 
-  constructor(private navCtrl: NavController) {
-    this.students = STUDENTS; //Diese lokale Variable soll den Wert von konstanten STUDENTS haben
+    // Apply CSS animation to the image element
+    imageElement?.classList.add('zoom-in');
+
+    // Wait for the animation to complete
+    setTimeout(() => {
+      // Navigate to the desired tab using the Angular Router
+      this.router.navigate([studentId]);
+    }, 300); // Adjust the timeout value to match the duration of the animation
   }
 
   goToTab1() {

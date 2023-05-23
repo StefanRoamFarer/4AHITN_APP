@@ -1,9 +1,19 @@
 ion-button {
-  --background: transparent;
+
   color: white;
   display: block;
   width: 100%;
 }
+ion-item {
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 
 
 
