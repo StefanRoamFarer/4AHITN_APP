@@ -6,3 +6,10 @@
 .zoom-out:hover {
   transform: scale(1.1); /* Zielzustand bei Hover */
 }
+
+ion-button {
+  --background: transparent;
+  color: black;
+  display: block;
+  width: 100%;
+}

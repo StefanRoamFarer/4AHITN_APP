@@ -1,5 +1,6 @@
 <ion-content [fullscreen] = "true" style = "--background: url('../../assets/icon/hnt.jpg') no-repeat center center / cover">
     <ion-button expand = "block" (click) = "goToTab1()">Startmenü</ion-button>
+
     <ion-grid>
       <ion-row>
         <ion-col *ngFor="let field of fields" (click)="onFieldClicked(field)">
