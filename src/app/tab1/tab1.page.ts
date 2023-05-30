@@ -7,8 +7,10 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  selectedTab: string = 'tab1';
 
   constructor (private navCtrl: NavController) {}
+
 
   goToTab2() {
     this.navCtrl.navigateForward('/tabs/tab2');
