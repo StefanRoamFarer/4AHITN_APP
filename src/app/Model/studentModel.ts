@@ -1,3 +1,4 @@
+
 export class StudentModel {
     id: number;
     name: string;
@@ -13,6 +14,9 @@ export class StudentModel {
     this.course = course;
     }
     }
+
+
+
 export const STUDENTS: StudentModel[] = [
   {
     id: 1,
@@ -180,3 +184,4 @@ export const STUDENTS: StudentModel[] = [
     imageUrl: '../../assets/icon/Bounty_linda.jpg',
   },
     ];
+
