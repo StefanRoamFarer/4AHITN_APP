@@ -6,8 +6,7 @@
 
 <ion-content [fullscreen]= "true" style = "--background: url('../../assets/icon/Quiz_Hintergrund.jpg') no-repeat center center / cover">
 
-  <ion-button expand="block" (click)="goToTab1()">Startmenü</ion-button>
-
+  <ion-button class="fade-in" expand="block" (click)="goToTab1()">Startmenü</ion-button>
   <ion-list *ngIf="currentStudent">
     <ion-item>
       <ion-label class = "imageWrapper">

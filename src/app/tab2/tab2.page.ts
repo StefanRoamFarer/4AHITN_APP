@@ -43,13 +43,13 @@ export class Tab2Page {
         name: 'Akpinar',
         imageUrl: '../../assets/icon/Tarik_neu.jpg',
         correctAnswer: 'Akpinar',
-        answers: ['Akpinar', 'Lueger', 'Ghiriti', 'Altman'],
+        answers: ['Akpinar', 'Lueger', 'Ghiriti', 'Altmann'],
       },
       {
-        name: 'Altman',
+        name: 'Altmann',
         imageUrl: '../../assets/icon/Tim_neu.jpg',
-        correctAnswer: 'Altman',
-        answers: ['Linda', 'Altman', 'Vollman', 'Hedrich'],
+        correctAnswer: 'Altmann',
+        answers: ['Linda', 'Altmann', 'Vollmann', 'Hedrich'],
       },
       {
         name: 'Begagic',
@@ -67,13 +67,13 @@ export class Tab2Page {
         name: 'Bilgin',
         imageUrl: '../../assets/icon/Salih_neu.jpg',
         correctAnswer: 'Bilgin',
-        answers: ['Benkovic', 'Bilgin', 'Strasshof', 'Pauer'],
+        answers: ['Benkovic', 'Bilgin', 'Strasshof Don', 'Pauer'],
       },
       {
         name: 'Cakir',
-        imageUrl: '../../assets/icon/Zerda_neu.jpg',
+        imageUrl: '../../assets/icon/Zerda_new.jpeg',
         correctAnswer: 'Cakir',
-        answers: ['Altman', 'Cakir', 'Milicic', 'Ibrahim'],
+        answers: ['Altmann', 'Cakir', 'Milicic', 'Ibrahim'],
       },
       {
         name: 'Falk',
@@ -85,13 +85,13 @@ export class Tab2Page {
         name: 'Ghiriti',
         imageUrl: '../../assets/icon/Roberto_neu.jpg',
         correctAnswer: 'Ghiriti',
-        answers: ['Pauer', 'Ghirit', 'Benkovic', 'Ramljak'],
+        answers: ['Pauer', 'Ghiriti', 'Benkovic', 'Ramljak'],
       },
       {
         name: 'Groiß',
         imageUrl: '../../assets/icon/Noel_neu.jpg',
         correctAnswer: 'Groiß',
-        answers: ['Vollman', 'Groiß', 'Akpiner', 'Ghiriti'],
+        answers: ['Vollmann', 'Groiß', 'Akpinar', 'Ghiriti'],
       },
       {
         name: 'Hedrich',
@@ -113,15 +113,15 @@ export class Tab2Page {
       },
       {
         name: 'Leueger',
-        imageUrl: '../../assets/icon/Lueger_neu.jpg',
+        imageUrl: '../../assets/icon/Leuger_neu.jpg',
         correctAnswer: 'Lueger',
-        answers: ['Altman', 'Lueger', 'Hedrich', 'Falk'],
+        answers: ['Altmann', 'Lueger', 'Hedrich', 'Falk'],
       },
       {
-        name: 'Strasshof',
+        name: 'Alex Strasshof Don',
         imageUrl: '../../assets/icon/Hofermayer_neu.jpg',
-        correctAnswer: 'Strasshof',
-        answers: ['unlocked Charakter', 'Strasshof', 'unknown', 'Sakar'],
+        correctAnswer: 'Alex Strasshof Don',
+        answers: ['unlocked Charakter', 'Alex Strasshof Don', 'unknown', 'Entschuldigung'],
       },
       {
         name: 'Milicic',
@@ -139,7 +139,7 @@ export class Tab2Page {
         name: 'Pauer',
         imageUrl: '../../assets/icon/Pauer_neu.jpg',
         correctAnswer: 'Pauer',
-        answers: ['Altman', 'Benkovic', 'Pauer', 'Lueger'],
+        answers: ['Altmann', 'Benkovic', 'Pauer', 'Lueger'],
       },
       {
         name: 'Ramljak',
@@ -176,7 +176,7 @@ export class Tab2Page {
     this.shuffleArray(students);
     students.forEach(student => this.shuffleArray(student.answers));
 
-    // Quiz-Daten setzen
+
     this.students = students;
   }
   shuffleArray(array: any[]) {
