@@ -27,6 +27,9 @@ ion-button:first-of-type {
     transform: translateX(0);
   }
 }
+button {
+  transform-origin: center;
+}
 
 
 
