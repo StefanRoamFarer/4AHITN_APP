@@ -1,3 +1,10 @@
+ion-button {
+  --background: transparent;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
 .zoom-out {
   transform: scale(1); /* Ausgangszustand */
   transition: transform 0.3s ease; /* Übergangseigenschaften */
