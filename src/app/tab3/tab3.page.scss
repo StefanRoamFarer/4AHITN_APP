@@ -1,3 +1,10 @@
+ion-button {
+  --background: transparent;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
 .zoom-out {
   transform: scale(1); /* Ausgangszustand */
   transition: transform 0.3s ease; /* Übergangseigenschaften */
@@ -11,3 +18,14 @@
   transition: transform 0.3s ease;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.centered-image {
+  width: 100px;
+  height: 100px;
+}

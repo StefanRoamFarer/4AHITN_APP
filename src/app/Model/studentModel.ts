@@ -1,187 +1,460 @@
 
 export class StudentModel {
-    id: number;
-    name: string;
-    course: string;
-    surname: string;
-    imageUrl: string;
+  id: number;
+  vname: string;
+  course: string;
+  surname: string;
+  imageUrl: string;
+  sib: string;
+  height: string;
+  age: string;
+  phone: string;
+  serie: string;
+  teach: string;
+  hobbies: string;
+  holi:string;
+  idol:string;
+  klasholi: string;
 
-    constructor(id: number, surname: string, imageUrl: string, name: string, course: string) {
-      this.id = id;
+
+  constructor(id: number, surname: string, imageUrl: string, name: string, course: string, sib: string, height: string, age: string, phone: string, serie: string, teach: string, hobbies: string, klasholi: string, holi:string, idol: string) {
+    this.id = id;
     this.surname = surname;
     this.imageUrl = imageUrl;
-    this.name = name;
+    this.vname = name;
     this.course = course;
-    }
-    }
-
+    this.sib= sib;
+    this.height=height;
+    this.age=age;
+    this.phone=phone;
+    this.serie=serie;
+    this.teach=teach;
+    this.hobbies=hobbies;
+    this.holi=holi;
+    this.idol=idol;
+    this.klasholi=klasholi;
+  }
+}
 
 
 export const STUDENTS: StudentModel[] = [
   {
+
     id: 1,
-    name: 'Tarik Can',
+    vname: 'Tarik Can',
     surname: 'Akpinar',
-    course: 'Informatik',
+    course: 'ITP2',
     imageUrl: '../../assets/icon/Bounty_tarik.jpg',
+    sib:'1',
+    height:'185cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Too Hot To Handle',
+    teach:'Wurst',
+    hobbies:'Wassersport',
+    holi:'Türkei',
+    idol:'Tarik',
+    klasholi:'N/A',
 
 
   },
   {
     id: 2,
-    name: 'Tim Philipp',
+    vname: 'Tim Philipp',
     surname: 'Altmann',
-    course: 'Physik',
+    course: 'BSPK',
     imageUrl: '../../assets/icon/Bounty_tim.jpg',
+    sib:'0',
+    height:'183cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Dragonball Z',
+    teach:'Pachner',
+    hobbies:'Fußball, Kraftsport, Saufen',
+    holi:'Athen',
+    idol:'Iker Casillas',
+    klasholi:'Strasshof Don',
+
   },
   {
     id: 3,
-    name: 'Hatidža',
+    vname: 'Hatidža',
     surname: 'Begagić',
-    course: 'Recht',
+    course: 'Englisch',
     imageUrl: '../../assets/icon/Bounty_begagic.jpg',
+    sib:'1',
+    height:'168cm',
+    age:'20',
+    phone:'IPhone',
+    serie:'Breaking Bad',
+    teach:'N/A',
+    hobbies:'lernen',
+    holi:'Dagestan',
+    idol:'Sportakus',
+    klasholi:'Michael Falk',
+
 
   },
   {
     id: 4,
-    name: 'Josip',
+    vname: 'Josip',
     surname: 'Benkovic',
-    course: 'Netzwerktechnik',
+    course: 'BSPK',
     imageUrl: '../../assets/icon/Bounty_josip.jpg',
+    sib:'0',
+    height:'185cm',
+    age:'19',
+    phone:'IPhone',
+    serie:'Black Clover',
+    teach:'Frysak',
+    hobbies:'Fußball spielen',
+    holi:'Madrid und Tokio',
+    idol:'Cristion Ronaldo',
+    klasholi:'Umut',
+
 
   },
   {
     id: 5,
-    name: 'Salih',
+    vname: 'Salih',
     surname: 'Bilgin',
-    course: 'Recht',
+    course: 'Mathe',
     imageUrl: '../../assets/icon/Bounty_salih.jpg',
+    sib:'3',
+    height:'185cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'La Casa de Papel',
+    teach:'Angermayer',
+    hobbies:'Fußball, Autos',
+    holi:'Madrid',
+    idol:'Cristiano Ronaldo',
+    klasholi:'Tarik',
+
   },
   {
     id: 6,
-    name: 'Zerda',
+    vname: 'Zerda',
     surname: 'Cakir',
-    course: 'ITP2',
+    course: 'Mathe',
     imageUrl: '../../assets/icon/Bounty_zerda.jpg',
+    sib:'2',
+    height:'168cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Grets Anatomy',
+    teach:'Hiesinger',
+    hobbies:'Volleyball',
+    holi:'Amerika',
+    idol:'Hiesinger',
+    klasholi:'Linda und Noel',
+
   },
   {
     id: 7,
-    name: 'Michael',
+    vname: 'Michael',
     surname: 'Falk',
-    course: 'SEW',
+    course: 'NWT1',
     imageUrl: '../../assets/icon/Bounty_Falk.jpg',
+    sib:'2',
+    height:'N/A',
+    age:'18',
+    phone:'N/A',
+    serie:'MA 2412',
+    teach:'Wurst',
+    hobbies:'Sachen machen',
+    holi:'Helsinki',
+    idol:'Trump',
+    klasholi:'N/A',
+
   },
   {
     id: 8,
-    name: 'Roberto',
+    vname: 'Roberto',
     surname: 'Ghiriti',
-    course: 'Recht',
+    course: 'WIR3',
     imageUrl: '../../assets/icon/Bounty_roberto.jpg',
+    sib:'0',
+    height:'187cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Overflow und Attack on Titan',
+    teach:'Frysak',
+    hobbies:'Klauen & Gym',
+    holi:'Japan',
+    idol:'Eren Jäger',
+    klasholi:'Roberto',
+
   },
   {
     id: 9,
-    name: 'Noel',
+    vname: 'Noel',
     surname: 'Groiß',
-    course: 'Recht',
+    course: 'BSPK',
     imageUrl: '../../assets/icon/Bounty_noel.jpg',
+    sib:'1',
+    height:'186cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Breaking Bad',
+    teach:'N/A',
+    hobbies:'Kraftsport',
+    holi:'Amerika',
+    idol:'N/A',
+    klasholi:'Tim,Linda,Zerda',
+
   },
   {
     id: 10,
-    name: 'Florian Robert',
+    vname: 'Florian Robert',
     surname: 'Hedrich',
-    course: 'SEW',
+    course: 'WIR3',
     imageUrl: '../../assets/icon/Bounty_flo.jpg',
+    sib:'1',
+    height:'172cm',
+    age:'19',
+    phone:'Samsung',
+    serie:'Brooklyn Nine Nine',
+    teach:'Frysak',
+    hobbies:'Coding',
+    holi:'Japan',
+    idol:'Eine Freundin',
+    klasholi:'Philipp Lueger',
+
   },
   {
     id: 11,
-    name: 'Nagi',
+    vname: 'Nagi',
     surname: 'Ibrahim',
-    course: 'Recht',
+    course: 'WIR2',
     imageUrl: '../../assets/icon/Bounty_nagi.jpg',
+    sib:'1',
+    height:'187cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'One Piece',
+    teach:'Frysak',
+    hobbies:'Gym',
+    holi:'Tokio',
+    idol:'Elon Musk',
+    klasholi:'Tim, Noel, Strasshof Don',
+
   },
   {
     id: 12,
-    name: 'Taisir',
+    vname: 'Taisir',
     surname: 'Khalifa',
-    course: 'Geschichte',
+    course: 'NW2',
     imageUrl: '../../assets/icon/Bounty_Khalifa.jpg',
+    sib:'2',
+    height:'164cm',
+    age:'18',
+    phone:'Samsung',
+    serie:'Detektiv Conan',
+    teach:'Frysak',
+    hobbies:'Zeichnen, Malen, Backen, Modelieren',
+    holi:'Südkorea, Kasachstan',
+    idol:'Shinchi Kudo',
+    klasholi:'Nagi',
+
   },
   {
     id: 13,
-    name: 'Philipp Karl',
+    vname: 'Philipp Karl',
     surname: 'Lueger',
-    course: 'Englisch',
+    course: 'SEW',
     imageUrl: '../../assets/icon/Bounty_lueger.jpg',
+    sib:'1',
+    height:'195cm',
+    age:'18',
+    phone:'IPhone',
+    serie:'Lucifer',
+    teach:'Angermayer & Frysak',
+    hobbies:'saufen',
+    holi:'Skandinavien',
+    idol:'Glatz',
+    klasholi:'Die Klasse 4AHITN',
+
   },
   {
     id: 14,
-    name: 'Don Hofermayer Alexander',
+    vname: 'Don Hofermayer Alexander',
     surname: 'Strasshof',
-    course: 'Chemie',
+    course: 'BSPK und Englisch',
     imageUrl: '../../assets/icon/Bounty_mayerhofer.jpg',
+    sib:'4',
+    height:'175cm',
+    age:'19',
+    phone:'Samsung',
+    serie:'Peaky Blinders',
+    teach:'Glatz, Frysak, Putzenlechner',
+    hobbies:'bissl Sport und Gaming',
+    holi:'Japan',
+    idol:'Don Hofermayer Alexander',
+    klasholi:'Tim',
+
   },
   {
     id: 15,
-    name: 'Lukas',
+    vname: 'Lukas',
     surname: 'Milicic',
-    course: 'BSPK',
+    course: 'Englisch',
     imageUrl: '../../assets/icon/Bounty_lukas.jpg',
+    sib:'2',
+    height:'185cm',
+    age:'17',
+    phone:'IPhone',
+    serie:'Jojos Bizarre Adventure',
+    teach:'Zivkovic',
+    hobbies:'Gaming',
+    holi:'Irland',
+    idol:'Lukas Schwager',
+    klasholi:'Luka',
+
   },
   {
     id: 16,
-    name: 'Stefan',
+    vname: 'Stefan',
     surname: 'Milojkovic',
-    course: 'Englisch',
+    course: 'NWT1',
     imageUrl: '../../assets/icon/Bounty_stefan.jpg',
+    sib:'4',
+    height:'169cm',
+    age:'17',
+    phone:'IPhone',
+    serie:'Baki',
+    teach:'Frysak',
+    hobbies:'Basketball',
+    holi:'Dubai',
+    idol:'Khabib',
+    klasholi:'N/A',
+
   },
   {
     id: 17,
-    name: 'Alexander Karl',
+    vname: 'Alexander Karl',
     surname: 'Pauer',
-    course: 'ITP2',
+    course: 'NWT1',
     imageUrl: '../../assets/icon/Bounty_Pauer.jpg',
+    sib:'2',
+    height:'178cm',
+    age:'17',
+    phone:'IPhone',
+    serie:'Loki, Peaky Blinders',
+    teach:'Frysak',
+    hobbies:'Fahrrad fahren',
+    holi:'Berchtesgaden',
+    idol:'Lewis Hamilton',
+    klasholi:'4AHITN',
+
   },
   {
     id: 18,
-    name: 'Luka',
+    vname: 'Luka',
     surname: 'Ramljak',
-    course: 'Mathe',
+    course: 'GGP',
     imageUrl: '../../assets/icon/Bounty_Luka.jpg',
+    sib:'2',
+    height:'187cm',
+    age:'18',
+    phone:'Sasmung',
+    serie:'Malcom Mittendrin',
+    teach:'Zivkovic',
+    hobbies:'N/A',
+    holi:'N/A',
+    idol:'RIN',
+    klasholi:'Lukas',
+
   },
   {
     id: 19,
-    name: 'Umut',
+    vname: 'Umut',
     surname: 'Sakar',
-    course: 'BSPK',
+    course: 'WIR3',
     imageUrl: '../../assets/icon/Bounty_umut.jpg',
+    sib:'1',
+    height:'178cm',
+    age:'20',
+    phone:'IPhone',
+    serie:'White Collar',
+    teach:'Frysak',
+    hobbies:'Gaming und Manhwas lesen',
+    holi:'Shibuya in Tokio, Japan',
+    idol:'Elon Musk',
+    klasholi:'Josip, Roberto, Stefan, Salih, Tarik, Nagi, Strasshof Don',
+
   },
   {
     id: 20,
-    name: 'Michael Nikolas',
+    vname: 'Michael Nikolas',
     surname: 'Samarati',
-    course: 'Netzwerktechnik',
+    course: 'ITP2',
     imageUrl: '../../assets/icon/Bounty_Masarati wrum wrum.jpg',
+    sib:'6',
+    height:'180cm',
+    age:'17',
+    phone:'Samsung',
+    serie:'Violet Evergarden',
+    teach:'Wurst',
+    hobbies:'Nachdenken',
+    holi:'Japan',
+    idol:'N/A',
+    klasholi:'N/A',
+
   },
   {
     id: 21,
-    name: 'Viktor RIP',
+    vname: 'Viktor RIP',
     surname: 'Trojan',
-    course: 'BSPK',
+    course: 'SEW',
     imageUrl: '../../assets/icon/Bounty_ viktor.jpg',
+    sib:'0',
+    height:'N/A',
+    age:'20',
+    phone:'One Plus',
+    serie:'N/A',
+    teach:'N/A',
+    hobbies:'Calesthenics und Coding',
+    holi:'N/A',
+    idol:'Glatz',
+    klasholi:'N/A',
+
   },
   {
     id: 22,
-    name: 'Philipp',
+    vname: 'Philipp',
     surname: 'Vollmann',
-    course: 'BSPK',
+    course: 'WIR3',
     imageUrl: '../../assets/icon/Bounty_vollmann.jpg',
+    sib:'0',
+    height:'188',
+    age:'19',
+    phone:'IPhone',
+    serie:'Chernobyl',
+    teach:'N/A',
+    hobbies:'Sportschutz',
+    holi:'Californien',
+    idol:'N/A',
+    klasholi:'N/A',
+
   },
   {
     id: 23,
-    name: 'Linda',
+    vname: 'Linda',
     surname: 'Yusupova',
-    course: 'BSPK',
+    course: 'Deutsch',
     imageUrl: '../../assets/icon/Bounty_linda.jpg',
+    sib:'3',
+    height:'173',
+    age:'19',
+    phone:'IPhone',
+    serie:'Shameless',
+    teach:'Mesanovic',
+    hobbies:'Sport machen',
+    holi:'Burgenland',
+    idol:'Lukas',
+    klasholi:'Zerda',
+
   },
-    ];
+];
 

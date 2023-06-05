@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center">
       4AHITN
     </ion-title>
   </ion-toolbar>
@@ -12,7 +12,7 @@
   <ion-list>
     <ion-item *ngFor="let student of students">
       <a [routerLink]="['' +student.id]">
-        <img src="{{ student.imageUrl }}" style="border-right: 400px" class="zoom-out" />
+        <img src="{{ student.imageUrl }}" style="border-right: 400px" class="zoom-out"/>
       </a>
     </ion-item>
 </ion-list>
