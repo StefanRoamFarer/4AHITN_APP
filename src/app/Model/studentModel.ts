@@ -381,7 +381,7 @@ export const STUDENTS: StudentModel[] = [
     hobbies:'Gaming und Manhwas lesen',
     holi:'Shibuya in Tokio, Japan',
     idol:'Elon Musk',
-    klasholi:'Josip, Roberto, Stefan, Salih, Tarik, Nagi, Strasshof Don',
+    klasholi:'Josip, Roberto, Strasshof Don',
 
   },
   {
