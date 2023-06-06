@@ -16,22 +16,31 @@
   <ion-accordion-group>
   <ion-accordion value="first">
     <ion-item slot="header" color="warning">
-      <ion-label>Informationen<p></p>zum Schüler</ion-label>
+      <ion-label>Allgemeines<p></p>zum Schüler</ion-label>
     </ion-item>
     <div class="custom2 ion-text-color" slot="content">Vorname:{{ student.vname }}</div>
     <div class="custom1 ion-text-color" slot="content">Nachname:{{ student.surname }}</div>
     <div class="custom2 ion-text-color" slot="content">Alter:{{ student.age }}</div>
     <div class="custom1 ion-text-color" slot="content">Größe:{{ student.height}}</div>
     <div class="custom2 ion-text-color" slot="content">Handymarke:{{ student.phone}}</div>
-    <div class="custom1" slot="content">Lieblingserie:{{ student.serie}}</div>
-    <div class="custom2" slot="content">Hobbys:{{ student.hobbies}}</div>
-    <div class="custom1" slot="content">Anzahl der Geschwister:{{ student.sib}}</div>
-    <div class="custom2" slot="content">Lieblingslehrer:{{ student.teach}}</div>
-    <div class="custom1" slot="content">Lieblingsfach:{{ student.course}}</div>
-    <div class="custom2" slot="content">Vorbild:{{ student.idol}}</div>
-    <div class="custom1" slot="content">Urlaubsziel:{{ student.holi}}</div>
-    <div class="custom2" slot="content">Würde gern in Urlaub mit:<p></p>{{ student.klasholi}}</div>
   </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="warning">
+        <ion-label>schulische Informationen<p></p>zum Schüler</ion-label>
+      </ion-item>
+      <div class="custom2" slot="content">Lieblingslehrer:{{ student.teach}}</div>
+      <div class="custom1" slot="content">Lieblingsfach:{{ student.course}}</div>
+    </ion-accordion>
+    <ion-accordion value="thridth">
+      <ion-item slot="header" color="warning">
+        <ion-label>private Informationen<p></p>zum Schüler</ion-label>
+      </ion-item>
+      <div class="custom1" slot="content">Lieblingserie:{{ student.serie}}</div>
+      <div class="custom1" slot="content">Anzahl der Geschwister:{{ student.sib}}</div>
+      <div class="custom2" slot="content">Vorbild:{{ student.idol}}</div>
+      <div class="custom1" slot="content">Urlaubsziel:{{ student.holi}}</div>
+      <div class="custom2" slot="content">Würde gern in Urlaub mit:<p></p>{{ student.klasholi}}</div>
+    </ion-accordion>
 </ion-accordion-group>
 
 </ion-content>
