@@ -102,7 +102,7 @@ export const STUDENTS: StudentModel[] = [
     course: 'BSPK',
     imageUrl: '../../assets/icon/Bounty_josip.jpg',
     sib:'0',
-    height:'185cm',
+    height:'187cm',
     age:'19',
     phone:'IPhone',
     serie:'Black Clover',
@@ -296,7 +296,7 @@ export const STUDENTS: StudentModel[] = [
   },
   {
     id: 15,
-    vname: 'Lukas',
+    vname: 'Lukas Chonki',
     surname: 'Milicic',
     course: 'Englisch',
     imageUrl: '../../assets/icon/Bounty_lukas.jpg',
@@ -350,7 +350,7 @@ export const STUDENTS: StudentModel[] = [
   },
   {
     id: 18,
-    vname: 'Luka',
+    vname: 'Luka Choka',
     surname: 'Ramljak',
     course: 'GGP',
     imageUrl: '../../assets/icon/Bounty_Luka.jpg',
