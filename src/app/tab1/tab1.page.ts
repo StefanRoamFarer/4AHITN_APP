@@ -26,11 +26,11 @@ export class Tab1Page {
 
 
   goToTab2() {
-    this.navCtrl.navigateForward('/tabs/tab2');
+    this.navCtrl.navigateForward('/tabs/tab2', { animationDirection: 'forward' });
   }
 
   goToTab3() {
-    this.navCtrl.navigateForward('/tabs/tab3');
+    this.navCtrl.navigateForward('/tabs/tab3', { animationDirection: 'forward' });
   }
 
 }

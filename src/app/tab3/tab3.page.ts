@@ -30,6 +30,6 @@ export class Tab3Page {
   }
 
   goToTab1() {
-    this.navCtrl.navigateForward('/tabs/tab1');
+    this.navCtrl.navigateForward('/tabs/tab1', { animationDirection: 'back' });
   }
 }
