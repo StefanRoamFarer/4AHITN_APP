@@ -71,7 +71,7 @@ export class Tab2Page {
       },
       {
         name: 'Cakir',
-        imageUrl: '../../assets/icon/Zerda_new.jpeg',
+        imageUrl: '../../assets/icon/Zerda_neu_Quiz.jpg',
         correctAnswer: 'Cakir',
         answers: ['Altmann', 'Cakir', 'Milicic', 'Ibrahim'],
       },
