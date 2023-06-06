@@ -1,18 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="ion-text-center">
-      Quiz
-    </ion-title>
+    <ion-title class = "ion-text-center">Quiz</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" >
-  <ion-button expand="block" (click)="goToTab1()">Startmenü</ion-button>
+<ion-content [fullscreen]= "true" style = "--background: url('../../assets/icon/Quiz_Hintergrund.jpg') no-repeat center center / cover">
 
+  <ion-button class="fade-in" expand="block" (click)="goToTab1()">Startmenü</ion-button>
   <ion-list *ngIf="currentStudent">
     <ion-item>
-      <ion-label>
-        <h2>{{ currentStudent.name }}</h2>
+      <ion-label class = "imageWrapper">
+
         <img [src]="currentStudent.imageUrl" />
       </ion-label>
     </ion-item>
@@ -29,7 +27,7 @@
 
     <ion-item *ngIf="!showAnswer">
       <ion-label>
-        <h3>Wähle die richtige Antwort:</h3>
+        <h3>Wer wird gesucht?</h3>
       </ion-label>
     </ion-item>
 
@@ -41,4 +39,5 @@
       </ion-item>
     </ng-container>
   </ion-list>
+
 </ion-content>

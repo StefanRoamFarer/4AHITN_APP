@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 interface Student {
   name: string;
@@ -11,15 +12,18 @@ interface Student {
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  styleUrls: ['tab2.page.scss'],
+
 })
 export class Tab2Page {
+
   students: Student[] = [];
   currentStudent: Student | undefined;
   showAnswer = false;
   isAnswerCorrect = false;
 
   constructor(private navCtrl: NavController) {}
+
 
   ionViewWillEnter() {
     this.loadQuizData();
@@ -37,134 +41,134 @@ export class Tab2Page {
     const students: Student[] = [
       {
         name: 'Akpinar',
-        imageUrl: '../../assets/icon/Bounty_tarik.jpg',
+        imageUrl: '../../assets/icon/Tarik_neu.jpg',
         correctAnswer: 'Akpinar',
-        answers: ['Akpinar', 'Lueger', 'Ghiriti', 'Altman'],
+        answers: ['Akpinar', 'Lueger', 'Ghiriti', 'Altmann'],
       },
       {
-        name: 'Altman',
-        imageUrl: '../../assets/icon/Bounty_tim.jpg',
-        correctAnswer: 'Altman',
-        answers: ['Linda', 'Altman', 'Vollman', 'Hedrich'],
+        name: 'Altmann',
+        imageUrl: '../../assets/icon/Tim_neu.jpg',
+        correctAnswer: 'Altmann',
+        answers: ['Linda', 'Altmann', 'Vollmann', 'Hedrich'],
       },
       {
         name: 'Begagic',
-        imageUrl: '../../assets/icon/Bounty_begagic.jpg',
+        imageUrl: '../../assets/icon/Begagic_neu.jpg',
         correctAnswer: 'Begagic',
         answers: ['Khalifa', 'Begagic', 'Ramljak', 'Samarati'],
       },
       {
         name: 'Benkovic',
-        imageUrl: '../../assets/icon/Bounty_josip.jpg',
+        imageUrl: '../../assets/icon/Josip_neu.jpg',
         correctAnswer: 'Benkovic',
         answers: ['Begagic', 'Benkovic', 'Hedrich', 'Groiß'],
       },
       {
         name: 'Bilgin',
-        imageUrl: '../../assets/icon/Bounty_salih.jpg',
+        imageUrl: '../../assets/icon/Salih_neu.jpg',
         correctAnswer: 'Bilgin',
-        answers: ['Benkovic', 'Bilgin', 'Strasshof', 'Pauer'],
+        answers: ['Benkovic', 'Bilgin', 'Strasshof Don', 'Pauer'],
       },
       {
         name: 'Cakir',
-        imageUrl: '../../assets/icon/Bounty_zerda.jpg',
+        imageUrl: '../../assets/icon/Zerda_new.jpeg',
         correctAnswer: 'Cakir',
-        answers: ['Altman', 'Cakir', 'Milicic', 'Ibrahim'],
+        answers: ['Altmann', 'Cakir', 'Milicic', 'Ibrahim'],
       },
       {
         name: 'Falk',
-        imageUrl: '../../assets/icon/Bounty_Falk.jpg',
+        imageUrl: '../../assets/icon/Falk_neu.jpg',
         correctAnswer: 'Falk',
         answers: ['Sakar', 'Falk', 'Pauer', 'Samarati'],
       },
       {
         name: 'Ghiriti',
-        imageUrl: '../../assets/icon/Bounty_roberto.jpg',
+        imageUrl: '../../assets/icon/Roberto_neu.jpg',
         correctAnswer: 'Ghiriti',
-        answers: ['Pauer', 'Ghirit', 'Benkovic', 'Ramljak'],
+        answers: ['Pauer', 'Ghiriti', 'Benkovic', 'Ramljak'],
       },
       {
         name: 'Groiß',
-        imageUrl: '../../assets/icon/Bounty_noel.jpg',
+        imageUrl: '../../assets/icon/Noel_neu.jpg',
         correctAnswer: 'Groiß',
-        answers: ['Vollman', 'Groiß', 'Akpiner', 'Ghiriti'],
+        answers: ['Vollmann', 'Groiß', 'Akpinar', 'Ghiriti'],
       },
       {
         name: 'Hedrich',
-        imageUrl: '../../assets/icon/Bounty_flo.jpg',
+        imageUrl: '../../assets/icon/Flo_neu.jpg',
         correctAnswer: 'Hedrich',
         answers: ['Milicic', 'Hedrich', 'Bilgin', 'Falk'],
       },
       {
         name: 'Ibrahim',
-        imageUrl: '../../assets/icon/Bounty_nagi.jpg',
+        imageUrl: '../../assets/icon/Nagi_neu.jpg',
         correctAnswer: 'Ibrahim',
         answers: ['Falk', 'Ibrahim', 'Ghiriti', 'Lueger'],
       },
       {
         name: 'Khalifa',
-        imageUrl: '../../assets/icon/Bounty_Khalifa.jpg',
+        imageUrl: '../../assets/icon/Taisir_neu.jpg',
         correctAnswer: 'Khalifa',
         answers: ['Yusupova', 'Khalifa', 'Benkovic', 'Begagic'],
       },
       {
         name: 'Leueger',
-        imageUrl: '../../assets/icon/Bounty_lueger.jpg',
+        imageUrl: '../../assets/icon/Leuger_neu.jpg',
         correctAnswer: 'Lueger',
-        answers: ['Altman', 'Lueger', 'Hedrich', 'Falk'],
+        answers: ['Altmann', 'Lueger', 'Hedrich', 'Falk'],
       },
       {
-        name: 'Strasshof',
-        imageUrl: '../../assets/icon/Bounty_mayerhofer.jpg',
-        correctAnswer: 'Strasshof',
-        answers: ['unlocked Charakter', 'Strasshof', 'unknown', 'Sakar'],
+        name: 'Alex Strasshof Don',
+        imageUrl: '../../assets/icon/Hofermayer_neu.jpg',
+        correctAnswer: 'Alex Strasshof Don',
+        answers: ['unlocked Charakter', 'Alex Strasshof Don', 'unknown', 'Entschuldigung'],
       },
       {
         name: 'Milicic',
-        imageUrl: '../../assets/icon/Bounty_lukas.jpg',
+        imageUrl: '../../assets/icon/Lukas_neu.jpg',
         correctAnswer: 'Milicic',
         answers: ['Milojkovic', 'Milicic', 'Benkovic', 'Ramljak'],
       },
       {
         name: 'Milojkovic',
-        imageUrl: '../../assets/icon/Bounty_stefan.jpg',
+        imageUrl: '../../assets/icon/Stefan_neu.jpg',
         correctAnswer: 'Milojkovic',
         answers: ['Milicic', 'Milojkovic', 'Benkovic', 'Ibrahim'],
       },
       {
         name: 'Pauer',
-        imageUrl: '../../assets/icon/Bounty_Pauer.jpg',
+        imageUrl: '../../assets/icon/Pauer_neu.jpg',
         correctAnswer: 'Pauer',
-        answers: ['Altman', 'Benkovic', 'Pauer', 'Lueger'],
+        answers: ['Altmann', 'Benkovic', 'Pauer', 'Lueger'],
       },
       {
         name: 'Ramljak',
-        imageUrl: '../../assets/icon/Bounty_Luka.jpg',
+        imageUrl: '../../assets/icon/Luka_neu.jpg',
         correctAnswer: 'Ramljak',
         answers: ['Benkovic', 'Ramljak', 'Milicic', 'Ghiriti'],
       },
       {
         name: 'Sakar',
-        imageUrl: '../../assets/icon/Bounty_umut.jpg',
+        imageUrl: '../../assets/icon/umut_neu.jpg',
         correctAnswer: 'Sakar',
         answers: ['Sakar', 'Lueger', 'Cakir', 'Pauer'],
       },
       {
         name: 'Samarati',
-        imageUrl: '../../assets/icon/Bounty_Masarati wrum wrum.jpg',
+        imageUrl: '../../assets/icon/Samarati_neu.jpg',
         correctAnswer: 'Samarati',
         answers: ['Samarati', 'Groiß', 'Altmann', 'Vollmann'],
       },
       {
         name: 'Vollmann',
-        imageUrl: '../../assets/icon/Bounty_vollmann.jpg',
+        imageUrl: '../../assets/icon/Vollman_neu.jpg',
         correctAnswer: 'Vollmann',
         answers: ['Vollmann', 'Hedrich', 'Benkovic', 'Ibrahim'],
       },
       {
         name: 'Yusupova',
-        imageUrl: '../../assets/icon/Bounty_linda.jpg',
-        correctAnswer: 'Idol',
+        imageUrl: '../../assets/icon/Linda_neu.jpg',
+        correctAnswer: 'Yusupova',
         answers: ['Yusupova', 'Ramljak', 'Pauer', 'Samarati'],
       }
     ];
@@ -172,7 +176,7 @@ export class Tab2Page {
     this.shuffleArray(students);
     students.forEach(student => this.shuffleArray(student.answers));
 
-    // Quiz-Daten setzen
+
     this.students = students;
   }
   shuffleArray(array: any[]) {

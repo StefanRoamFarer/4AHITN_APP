@@ -137,7 +137,7 @@ export const STUDENTS: StudentModel[] = [
     vname: 'Zerda',
     surname: 'Cakir',
     course: 'Mathe',
-    imageUrl: '../../assets/icon/Bounty_zerda.jpg',
+    imageUrl: '../../assets/icon/Zerda_new.jpeg',
     sib:'2',
     height:'168cm',
     age:'18',
