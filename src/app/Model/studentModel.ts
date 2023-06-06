@@ -109,7 +109,7 @@ export const STUDENTS: StudentModel[] = [
     teach:'Frysak',
     hobbies:'Fußball spielen',
     holi:'Madrid und Tokio',
-    idol:'Cristion Ronaldo',
+    idol:'Crista Ronaldo SEWY',
     klasholi:'Umut',
 
 
